@@ -1,0 +1,16 @@
+<sly data-sly-use.headerModel="${'com.brittania.core.models.HeaderModel'}">
+<div class="header">
+    <div class="header-logo">
+        <a href="${headerModel.logoLinkURL}">
+            <img src="${headerModel.getLogoImagePath}"/>
+        </a>
+    </div>
+    <div class="header-links">
+        <ul>
+        	<sly data-sly-list.headerLinks="${headerModel.getHeaderLinks}">
+        		  <li class="header-link"><a href="${headerLinks.getLinkPath}">${headerLinks.getLinkTitle}</a></li>
+        	</sly>
+        </ul>
+    </div>
+</div>
+</sly>

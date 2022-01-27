@@ -1,0 +1,37 @@
+body {
+background-color: burlywood;
+margin: 0;
+}
+
+.header {
+    padding:8px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+
+
+.header-logo img{
+    height: 56px;
+}
+
+
+.header-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header-links li {
+    margin: 0 8px;
+}
+
+.header-links li a{
+    text-decoration: none;
+    color:brown;
+    font-size: 1.5rem;
+}
+
+.header-links li a:hover{
+    text-decoration: underline;
+}
